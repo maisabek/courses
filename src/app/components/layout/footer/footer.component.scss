@@ -1,0 +1,33 @@
+@import "../../../shared/FixedProperites.scss";
+.footer{
+    border-top: 1px dotted $contentColor;
+    padding: 20px;
+    
+    h5{color: $contentColor;font-size: $fontsize;margin: 4%;}
+    ul{
+        margin-left: 58%;
+        li{
+            list-style-type: none;
+            margin: 0 2%;
+            border: 1px solid $contentColor;
+            padding: 6px;
+            border-radius: 2px;
+            transition: all 1s ease-in-out;
+            a{
+                color: $contentColor;
+                text-decoration: none;
+            }
+        }
+        li:hover{
+            background: $contentColor;
+        }
+        li:hover a{
+            color: $mainColor;
+        }
+    }
+}
+@media (max-width:767px) {
+    .footer ul {
+        margin-left: 0%;
+    } 
+}

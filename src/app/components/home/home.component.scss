@@ -1,0 +1,141 @@
+@import "../../shared/FixedProperites.scss";
+
+.header{
+    // background: url(../../../assets/images/bg-header.png);
+    overflow-x: hidden;
+    min-height: 715px;
+    .content{
+        margin: 40% 0px;
+        color: $contentColor;
+        font-size: $fontsize;
+        button{
+            background: transparent;
+            color: $contentColor;
+            border: 1px solid $contentColor;
+            outline: none;
+            width: 30%;
+            padding: 9px;
+            font-family: system-ui;
+          
+        }
+        h5{
+            font-family: cursive;
+            font-size: $headerFontSize;
+        }
+        p{
+            font-family: system-ui;
+            margin: 6% 0px;
+        }
+        a{text-decoration: none;color: $contentColor;}
+    }
+
+}
+
+.about{
+    h5{
+        color: $contentColor;
+        font-size: $mainFontSize;
+        font-family: cursive;
+        margin-top: 17% ;
+    }
+    p{
+        color: $contentColor;
+        font-size: $fontsize;
+        margin: 5% 0;
+        font-family: system-ui;
+    }
+}
+
+.overview{
+    .content{
+        background: rgb(45, 3, 100);
+        padding: 70px;
+        color: $contentColor;
+        font-size: $fontsize;
+        border-radius: 7px;
+        h5,p{margin-left: 5%;}
+        h5{font-size: $mainFontSize;}
+    }
+}
+
+.tab{
+    ul{
+        li{
+            color: $mainColor;
+            list-style-type: none;
+            font-size: $fontsize;
+            margin: 3% 0;
+            cursor: pointer;
+            background: $contentColor;
+            padding: 20px;
+            border-radius: 5px;
+            transition: all 1s ease-in-out;
+        }
+        li:hover{
+            background:rgb(45, 3, 100);
+            color: white;
+        }
+    }
+    .content{
+        background: rgb(45, 3, 100);
+        padding: 20px;
+        font-size: $fontsize;
+        border-bottom-left-radius: 120px;
+        border-top-right-radius: 120px;
+        span{color: rgb(187, 18, 238);}
+        h5{
+            font-size: $mainFontSize;
+            color: $contentColor;
+            margin: 8% 0;
+            font-family: cursive;
+        }
+        p{
+            margin-top: 12%;
+            margin-left: 2%;
+            color: $contentColor;
+            font-family: system-ui;
+        }
+        ul{
+            li{
+                list-style-type: disc;
+                margin: 0;
+                color: $contentColor;
+                padding: 4px;
+                background: transparent;
+            }
+           
+        }
+    }
+}
+::marker {color: rgb(187, 18, 238);}
+
+.certificate{
+    overflow-x: hidden;
+    h5{color: $contentColor;font-size: $mainFontSize;margin-top: 30%;font-family: cursive;}
+    p{color: $contentColor;font-size: $fontsize;font-family: system-ui;}
+}
+
+@media (max-width:767px) {
+    .overview .content div{
+        border-right: none !important;
+        border-bottom: 1px solid white;
+    }
+    .overview .content h5, .overview .content h5{
+      margin-top: 12%;
+    }
+    .tab .content h5{
+        font-size: 17px;
+        color: white;
+        margin: 23% 0;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .overview .content div{
+        border-right: none !important;
+        border-bottom: 1px solid white;
+    }
+    .overview .content h5, .overview .content h5{
+        margin-top: 6%;
+      }
+}

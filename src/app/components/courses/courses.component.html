@@ -1,0 +1,33 @@
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5 mb-5">
+                    <h5>Our Courses</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="mt-5 mb-5">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-sm-6 col-md-6 col-lg-4 mt-5" *ngFor="let item of allCourses">
+                <a href="https://www.udemy.com{{item.url}}">
+                <div class="content h-100">
+                <img [src]="item.image_480x270" class="w-100" alt="">
+                <!-- <p class="mt-4" style="margin: 9% 0;">{{item.title}}</p> -->
+                <div class="d-flex mt-4">
+                <p class="w-25">{{item.price}}</p>
+                <button class="w-50">
+                <a  href="https://www.udemy.com{{item.url}}">See Course</a>
+               </button>
+                </div>
+                </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

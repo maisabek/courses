@@ -1,0 +1,44 @@
+@import "../../../shared/FixedProperites.scss";
+
+.navbar1{
+    background:$mainColor;
+    border-bottom: 1px dotted $contentColor;
+    padding: 16px;
+    h5{
+        font-size: $fontsize;
+    }
+    ul{
+        margin: 0;
+        line-height: 33px;
+        li{
+            list-style-type: none;
+            margin: 0 3%;
+            a{
+                text-decoration: none;
+                color: $contentColor;
+            }
+        }
+    }
+    a{text-decoration: none;}
+}
+
+.pos{
+    position: fixed;
+    width: 100%;
+    top:0;
+    background: $mainColor;
+
+}
+.mobileScreenMenu{display:none}
+@media (max-width:767px) {
+    .navbar1 ul{
+        display: none !important;
+    }
+    .mobileScreenMenu{
+        display: block;
+        font-size: $mainFontSize;
+        color: white;
+        cursor: pointer;
+    
+    }
+}

@@ -1,0 +1,138 @@
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-7 col-lg-6">
+                <div class="content">
+                <h5 class="wow bounce" data-wow-duration="2s">Teach the world online
+                </h5>
+                <p>
+                 Online video course, reach students across the globe, and earn money
+                </p>
+                <button class="wow fadeInUpBig" data-wow-duration="2s">
+                    <a routerLink="/courses">
+                    Courses
+                </a>
+                </button>
+            </div>
+            </div>
+            <div class="col-sm-12 col-md-5 col-lg-4">
+                <div class="wow fadeInRightBig w-100 ml-5" data-wow-duration="2s" style="margin: 27% 0;">
+                <img src="assets/images/01.png" class="w-100" alt="">
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end header -->
+
+
+<div class="overview mt-5 mb-5" id="overview">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5 mb-5">
+                <div class="content w-100">
+                    <div class="row">
+                      <div class="col-md-12 col-lg-4" style="border-right: 1px solid white;">
+                        <h5>8 unique lessons online
+                        </h5>
+                        <p>
+                            the time which is convenient for you
+                        </p>
+                      </div>
+                      
+                        <div class="col-md-12 col-lg-4 ml-3" style="border-right: 1px solid white;">
+                          <h5>Over 100 video lessons
+                          </h5>
+                          <p>
+                            unlimited access to a library of video  
+                        </p>
+                        </div>
+
+                            <div class="col-md-12 col-lg-4 ml-3">
+                              <h5>Portfolio as a result
+                              </h5>
+                              <p>
+                                you will receive a portfolio and 3 ready                              
+                              </p>
+                            </div>
+                  </div>
+            </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="about mt-5 mb-5" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="wow fadeInLeftBig col-md-5 mt-5 mb-5" data-wow-duration="2s">
+               <img src="assets/images/07.png" class="w-100" alt="">
+            </div>
+            <div class="col-md-7">
+                <div class="m-5">
+                <h5 class="wow bounce" data-wow-duration="1s">About Our Courses</h5>
+                 <p class="wow fadeInUp" data-wow-duration="4s">
+                  Learning keeps you in the lead. Get in-demand skills to impress 
+                  <br><br>
+                  anyone This course is a synergy of theoretical and practical  
+                  <br><br>
+                  lessons in which you will make your first 3 sites and a portfolio that you can demonstrate
+                  </p>
+             </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end about -->
+
+
+<div class="tab mt-5 mb-5" id="courseProgram">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9 col-lg-3 mt-5 mb-5">
+               <ul>
+                   <li *ngFor="let item of info" (click)="getData(item.id)">
+                       <a >WEEK {{item.id}}</a>
+                   </li>
+               </ul>
+            </div>
+            <div class="col-md-12 col-lg-8 mt-5 mb-5">
+                <div class="content">
+                    <h5 class="wow bounce" data-wow-duration="2s">{{info[id-1].title}}</h5>
+                    <ul>
+                        <li *ngFor="let item of info[id-1].list">
+                                {{item}}
+                        </li>
+                    </ul>
+                    <div class="d-flex w-100">
+                    <p class="w-75"><span>result </span> : {{info[id-1].content}}</p>
+                    <img [src]="info[id-1].img" class="w-25" style="height: 217px;" alt="">
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="certificate mt-5 mb-5" id="certificate">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6">
+                <h5 class="wow bounce" data-wow-duration="4s">Certificate</h5>
+                <p>
+                    After completing the course and submitting your thesis, you will receive a certificate that confirms that you are investing in self-education. 
+                </p>
+            </div>
+            <div class="wow fadeInRightBig col-md-6 mt-5 mb-5" data-wow-duration="2s">
+                <img src="assets/images/13.png" class="w-100" alt="">
+            </div>
+           
+        </div>
+    </div>
+</div>
+<!-- end team -->
+
