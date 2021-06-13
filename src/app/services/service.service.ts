@@ -6,10 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ServiceService {
-
+ id:any=1
   constructor(private http:HttpClient) {
    }
   getData():Observable<any>{
     return this.http.get(`assets/data.json`)
   }
+
 }

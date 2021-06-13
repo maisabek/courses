@@ -9,15 +9,23 @@
         color: $contentColor;
         font-size: $fontsize;
         button{
-            background: transparent;
+            background:transparent;
             color: $contentColor;
-            border: 1px solid $contentColor;
+            border: 1px solid white;
             outline: none;
             width: 30%;
             padding: 9px;
             font-family: system-ui;
-          
+            transition: .5s;
+            
+        } 
+        
+        button:hover{
+            border:none;
+          background:rgb(45, 3, 100);
+          box-shadow: 0 0 10px rgb(45, 3, 100),0 0 40px rgb(45, 3, 100), 0 0 80px rgb(45, 3, 100);       
         }
+      
         h5{
             font-family: cursive;
             font-size: $headerFontSize;
@@ -42,7 +50,8 @@
         color: $contentColor;
         font-size: $fontsize;
         margin: 5% 0;
-        font-family: system-ui;
+        font-family: -webkit-pictograph;
+        
     }
 }
 
@@ -53,28 +62,39 @@
         color: $contentColor;
         font-size: $fontsize;
         border-radius: 7px;
-        h5,p{margin-left: 5%;}
-        h5{font-size: $mainFontSize;}
+        h5,p{margin-left: 5%;font-family: -webkit-pictograph;
+        }
+        h5{font-size: $mainFontSize;font-family: cursive;
+        }
     }
 }
 
 .tab{
     ul{
         li{
-            color: $mainColor;
             list-style-type: none;
             font-size: $fontsize;
             margin: 3% 0;
             cursor: pointer;
-            background: $contentColor;
+            background:rgb(45, 3, 100);
+            color: white; 
             padding: 20px;
             border-radius: 5px;
             transition: all 1s ease-in-out;
+                font-family: -webkit-pictograph;
+          a{
+              width: 80%;
+          }
+          span{
+            width: 20%;
+            font-weight: bold;
+            font-size: 48px;
+            margin-left: 20%;
+            color: #2d0364;
+          }
+            
         }
-        li:hover{
-            background:rgb(45, 3, 100);
-            color: white;
-        }
+
     }
     .content{
         background: rgb(45, 3, 100);
@@ -93,7 +113,7 @@
             margin-top: 12%;
             margin-left: 2%;
             color: $contentColor;
-            font-family: system-ui;
+            font-family: -webkit-pictograph;
         }
         ul{
             li{
@@ -107,35 +127,73 @@
         }
     }
 }
+
+.tabStyle{
+    background:white !important;
+    color: rgb(45, 3, 100) !important;
+}
 ::marker {color: rgb(187, 18, 238);}
 
 .certificate{
     overflow-x: hidden;
     h5{color: $contentColor;font-size: $mainFontSize;margin-top: 30%;font-family: cursive;}
-    p{color: $contentColor;font-size: $fontsize;font-family: system-ui;}
+    p{color: $contentColor;font-size: $fontsize;font-family: -webkit-pictograph;
+    }
 }
 
 @media (max-width:767px) {
-    .overview .content div{
+    .header .content button{
+        margin-top: 2%;
+        width: 39%;
+    }
+    .overview .content .row div:nth-of-type(1),.overview .content .row div:nth-of-type(2){
         border-right: none !important;
         border-bottom: 1px solid white;
     }
-    .overview .content h5, .overview .content h5{
-      margin-top: 12%;
+    .overview .content h5{
+      margin-top: 8%;
     }
+    .overview .content p{
+        margin-bottom: 8%;
+        font-size: 16px;
+      }
     .tab .content h5{
-        font-size: 17px;
+        font-size: 16px;
         color: white;
-        margin: 23% 0;
+        margin: 16% 0;
     }
+    .tab .content{border-radius: 9px}
+    .overview .content{
+        padding: 23px;
+    }
+    .tab .content div:nth-of-type(1){
+        flex-wrap: wrap;
+    }
+    .tab .content div:nth-of-type(1) p{
+        width: 100% !important;
+    }
+    .tab .content div:nth-of-type(1) img{
+        width: 80% !important;
+        margin-left: 13%;
+        margin-top: 4%;
+        margin-bottom: 4%
+    }
+    .tab ul{margin-left: -5%;}
+    ::marker {color: rgb(187, 18, 238) !important;}
+
 }
 
 @media (min-width:768px) and (max-width:991px) {
-    .overview .content div{
+    
+    .overview .content h5{
+        margin-top: 8%;
+      }
+      .overview .content p{
+          margin-bottom: 8%;
+          font-size: 16px;
+        }
+    .overview .content .row div:nth-of-type(1),.overview .content .row div:nth-of-type(2){
         border-right: none !important;
         border-bottom: 1px solid white;
     }
-    .overview .content h5, .overview .content h5{
-        margin-top: 6%;
-      }
 }

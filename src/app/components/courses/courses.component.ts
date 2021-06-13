@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServiceService } from 'src/app/services/service.service';
-
+import {NgwWowService} from 'ngx-wow'
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
@@ -8,7 +8,8 @@ import { ServiceService } from 'src/app/services/service.service';
 })
 export class CoursesComponent implements OnInit {
 
-  constructor(private service:ServiceService) { 
+  constructor(private wowService: NgwWowService,private ServiceService:ServiceService) {
+    this.wowService.init();
     this.getData()
 
   }
@@ -20,7 +21,7 @@ export class CoursesComponent implements OnInit {
   allCourses:any
   nextPage:any
   getData(){
-    this.service.getData().subscribe((res)=>{
+    this.ServiceService.getData().subscribe((res)=>{
       this.nextPage=res.next
      this.allCourses=res.results
      console.log("res",res)
