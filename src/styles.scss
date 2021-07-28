@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import "../../courses/src/app/shared/FixedProperites.scss";
+// @import "../../courses/src/app/shared/FixedProperites.scss";
+$mainColor:rgb(76, 24, 119);
 body{
     background: $mainColor;
 }
