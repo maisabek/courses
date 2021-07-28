@@ -1,5 +1,9 @@
-@import "../../../shared/FixedProperites.scss";
-
+// @import "../../../shared/FixedProperites.scss";
+$mainColor:rgb(76, 24, 119);
+$mainFontSize:20px;
+$contentColor:white;
+$fontsize:18px;
+$headerFontSize:25px;
 .navbar1{
     background:$mainColor;
     border-bottom: 1px dotted $contentColor;
